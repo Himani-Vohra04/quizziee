@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="teacher">
+  <div class="container">
+    <h2>🔐 Teacher Login</h2>
+    <input type="password" id="teacherPass" placeholder="Enter Password">
+    <button onclick="verifyTeacher()">Login</button>
+    <div id="teacherPanel" style="display:none;">
+      <h3>Create Quiz</h3>
+      <input type="text" id="topic" placeholder="Topic (Coding, Aptitude, Soft Skills)">
+      <textarea id="question" placeholder="Question"></textarea>
+      <input type="text" id="opt1" placeholder="Option 1">
+      <input type="text" id="opt2" placeholder="Option 2">
+      <input type="text" id="opt3" placeholder="Option 3">
+      <input type="text" id="opt4" placeholder="Option 4">
+      <input type="text" id="correct" placeholder="Correct Option (1-4)">
+      <button onclick="saveQuestion()">Save Question</button>
+    </div>
+  </div>
+  <footer>Created by Himani ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>

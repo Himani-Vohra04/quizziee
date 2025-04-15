@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Score</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="score">
+  <div class="container">
+    <h2>🏆 Your Score</h2>
+    <p id="scoreText"></p>
+    <a href="index.html" class="btn">Go Home</a>
+  </div>
+  <footer>Created by Himani ❤️</footer>
+  <script>
+    document.getElementById("scoreText").innerText = 
+      `You scored ${localStorage.getItem("score")} out of ${localStorage.getItem("total")}`;
+  </script>
+</body>
+</html>
